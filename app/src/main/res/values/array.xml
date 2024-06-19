@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="questions">
+        <item>In what galaxy is our solar system located?</item>
+        <item>Red, yellow, and blue are examples of what?</item>
+        <item>Anti-clockwise moves in which direction?</item>
+        <item>What is the shortest month of the year?</item>
+        <item>Who is known as the "Father of Modern Physics"?</item>
+        <item>In what year did the Titanic sink?</item>
+    </string-array>
+    <string-array name="option1">
+        <item>Cartwheel Galaxy</item>
+        <item>Backward Galaxy</item>
+        <item>The Milky Way</item>
+        <item>Andromeda Galaxy</item>
+    </string-array>
+
+    <string-array name="option2">
+        <item>Primary colors</item>
+        <item>Secondary colors</item>
+        <item>Tertiary colors</item>
+        <item>Common color groupings</item>
+    </string-array>
+
+    <string-array name="option3">
+        <item>Top</item>
+        <item>Right</item>
+        <item>Bottom</item>
+        <item>Left</item>
+    </string-array>
+    <string-array name="option4">
+        <item>April</item>
+        <item>June</item>
+        <item>February</item>
+        <item>September</item>
+    </string-array>
+    <string-array name="option5">
+        <item>Tupac</item>
+        <item>Albert Einstein</item>
+        <item>Sir Isaac Newton</item>
+        <item>Galileo</item>
+    </string-array>
+    <string-array name="option6">
+        <item>2024</item>
+        <item>2002</item>
+        <item>1912</item>
+        <item>1800</item>
+    </string-array>
+
+    <integer-array name="answers">
+        <item>2</item> <!-- Index of correct answer for Question 1 (The Milky Way) -->
+        <item>0</item> <!-- Index of correct answer for Question 2 (Primary colors) -->
+        <item>3</item> <!-- Index of correct answer for Question 3 (Left) -->
+        <item>2</item> <!-- Index of correct answer for Question 4 (February) -->
+        <item>1</item> <!-- Index of correct answer for Question 5 (Albert Einstein) -->
+        <item>2</item> <!-- Index of correct answer for Question 6 (1912) -->
+    </integer-array>
+</resources>

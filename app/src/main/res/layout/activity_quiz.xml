@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Quiz">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:cardCornerRadius="25dp"
+        app:cardMaxElevation="30dp"
+        android:backgroundTint="@color/creamgreen"
+        app:cardPreventCornerOverlap="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:padding="15dp"
+                android:progressBackgroundTint="@color/creambrown"
+                android:progressTint="@color/black"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <RelativeLayout
+                android:id="@+id/layoutRadio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_margin="15dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/question"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="1. What us wrong"
+                    android:padding="15dp"
+                    />
+                <RadioGroup
+                    android:id="@+id/answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:layout_below="@id/question"
+
+                    >
+                    <RadioButton
+                        android:id="@+id/option1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hello"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/option2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hello"
+                        />
+                    <RadioButton
+                        android:id="@+id/option3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hello"
+                        />
+                    <RadioButton
+                        android:id="@+id/option4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hello"
+                        />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btns"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/answers"
+                    android:text="Next"
+                    />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/resultsTable"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="15dp"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="start">
+                    <TextView
+                        android:id="@+id/label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/finishlabel"
+                        android:textAlignment="center"
+                        android:padding="13dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/viewResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:text="@string/result"
+                        android:padding="20dp"
+                        android:textSize="35dp"
+                        />
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
